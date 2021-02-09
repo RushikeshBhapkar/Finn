@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/extraSmall"
+    android:layout_marginTop="@dimen/extraSmall"
+    android:layout_marginRight="@dimen/extraSmall"
+    android:layout_marginBottom="@dimen/extraSmall"
+    android:background="@drawable/shape_border_small_radius"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAdvertisement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/extraSmall"
+        android:layout_marginTop="@dimen/extraSmall"
+        android:layout_marginRight="@dimen/extraSmall"
+        android:layout_marginBottom="@dimen/extraSmall"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardElevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/radiusSmall">
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:contentDescription="@string/advertisement"
+            tools:srcCompat="@tools:sample/avatars" />
+        <ImageButton
+            android:id="@+id/bAddBookmark"
+            android:layout_width="@dimen/extraLarge"
+            android:layout_height="@dimen/extraLarge"
+            android:layout_gravity="top|end"
+            android:contentDescription="@string/bookmark"
+            android:background="@android:drawable/star_off" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvAddPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extraSmall"
+        android:contentDescription="@string/price"
+        android:maxLines="1"
+        android:paddingTop="@dimen/extraSmall"
+        android:text="@string/price"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvAdvertisement" />
+
+    <TextView
+        android:id="@+id/tvAddDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extraSmall"
+        android:contentDescription="@string/description"
+        android:maxLines="1"
+        android:paddingTop="@dimen/extraSmall"
+        android:text="@string/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddPrice" />
+
+    <TextView
+        android:id="@+id/tvAddLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/elevation"
+        android:contentDescription="@string/location"
+        android:paddingTop="@dimen/small"
+        android:paddingBottom="@dimen/small"
+        android:text="@string/location"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivAddLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription" />
+
+    <ImageView
+        android:id="@+id/ivAddLocation"
+        android:contentDescription="@string/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/elevation"
+        android:layout_marginTop="@dimen/extraSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDescription"
+        app:srcCompat="@drawable/ic_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

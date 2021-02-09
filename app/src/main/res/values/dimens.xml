@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="extraSmall">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="large">24dp</dimen>
+    <dimen name="extraLarge">32dp</dimen>
+    <dimen name="extraExtraLarge">40dp</dimen>
+    <dimen name="extraExtraExtraLarge">48dp</dimen>
+
+    <!-- Card -->
+    <dimen name="radiusSmall">4dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+</resources>
