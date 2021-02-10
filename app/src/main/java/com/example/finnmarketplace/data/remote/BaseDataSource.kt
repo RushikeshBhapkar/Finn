@@ -3,8 +3,15 @@ package com.example.finnmarketplace.data.remote
 import com.example.finnmarketplace.utils.Result
 import retrofit2.Response
 
-abstract class BaseDataSource {
 
+abstract class BaseDataSource {
+    /**
+     * Higher-order function
+     *
+     * @param call: suspend (), suspend function as a input parameter
+     *
+     * @return result : Result, Result of type T, Generics
+     */
     protected suspend fun <T> getResult(call: suspend () -> Response<T>): Result<T> {
         try {
             val response = call()

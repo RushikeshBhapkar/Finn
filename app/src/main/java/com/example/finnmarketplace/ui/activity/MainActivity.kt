@@ -10,6 +10,10 @@ import com.example.finnmarketplace.R
 import com.example.finnmarketplace.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
+
+/**
+ * @AndroidEntryPoint : Annotation to inject dependency in Activity
+ */
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navHostFragment: NavHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+                supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController: NavController = navHostFragment.navController
 
         val appBarConfiguration: AppBarConfiguration = AppBarConfiguration(navController.graph)

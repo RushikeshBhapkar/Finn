@@ -19,6 +19,8 @@ data class AdvertisementEntity(
     var adType: String?,
     /**
      * Nested fields can be referenced directly in the SQL queries.
+     * @Embedded annotation to represent an object that you'd like to
+     * decompose into its subfields within a table.
      */
     @Embedded
     val image: Image?,

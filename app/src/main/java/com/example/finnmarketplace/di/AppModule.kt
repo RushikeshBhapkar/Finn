@@ -18,17 +18,25 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-
+/**
+ * Dependancy Container where all the dependencies resides
+ */
 @Module
+/**
+ * Scope of this module is ApplicationComponent
+ */
 @InstallIn(ApplicationComponent::class)
 object AppModule {
 
+    /**
+     * Always returns single instance of Retrofit object
+     */
     @Singleton
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit = Retrofit.Builder()
-        .baseUrl(Constant.ServiceEndpoints.BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create(gson))
-        .build()
+            .baseUrl(Constant.ServiceEndpoints.BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
 
     @Provides
     fun provideGson(): Gson = GsonBuilder().create()

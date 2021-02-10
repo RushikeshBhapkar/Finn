@@ -7,8 +7,13 @@ import com.example.finnmarketplace.data.repository.AdvertisementRepository
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for Advertisement fragment
+ *
+ * @ViewModelInject
+ */
 class AdvertisementViewModel @ViewModelInject constructor(
-    private val repository: AdvertisementRepository
+        private val repository: AdvertisementRepository
 ) : ViewModel() {
 
     val advertisements = repository.getAdvertisements()

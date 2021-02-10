@@ -22,7 +22,7 @@ interface AdvertisementDao {
 
     /**
      * Insert query
-          * OnConflictStrategy.IGNORE : This will keep
+     * OnConflictStrategy.IGNORE : This will keep ignore if duplicate entry
      */
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun saveAdvertisements(advertisements : List<AdvertisementEntity>)

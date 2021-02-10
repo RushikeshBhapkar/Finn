@@ -5,6 +5,9 @@ import com.example.finnmarketplace.data.local.AdvertisementList
 import retrofit2.Response
 import retrofit2.http.GET
 
+/**
+ * AdvertisementService interface for Retrofit
+ */
 interface AdvertisementService {
     @GET(Constant.ServiceEndpoints.GET_ALL_ADVERTISEMENTS)
     suspend fun getAllAdvertisements() : Response<AdvertisementList>

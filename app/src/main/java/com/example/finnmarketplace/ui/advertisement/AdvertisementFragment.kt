@@ -8,7 +8,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.finnmarketplace.R
 import com.example.finnmarketplace.data.local.AdvertisementEntity
 import com.example.finnmarketplace.databinding.AdvertisementFragmentBinding
 import com.example.finnmarketplace.utils.Result
