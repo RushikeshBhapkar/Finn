@@ -3,9 +3,13 @@
 <tr>
 <td>
 This is the android application which shows the advertisements from remote source. Application have following features
+  
 1. Display advertisements
+
 2. Bookmark advertisements
+
 3. Display advertisement in offline mode 
+
 </td>
 </tr>
 </table>
